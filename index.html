@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psycho pics world</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    
+</head>
+<body>
+    <header>
+    <nav class="nav-bar">
+        <img src="images/Screenshot_2024-02-10_142039-removebg-preview (2).png" alt="logo" height="130px" width="130px">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#download">Photos</a></li>
+            <li><a href="https://remini.ai/">Enhancer</a></li>
+            <a href="logo.html"><button class="btnlogin">Login</button></a>
+        </ul>
+    </nav>
+    </header>
+    <div class="image-box">
+        <img src="images/dacd2d39a89073b3a4a278a116463014-Photoroom.png-Photoroom.png" alt="image-box">
+    </div>
+    <section class="home">
+        <div class="text-box">
+            <P>I'm</P>
+            <h1> PSYCHO </h1>
+            <h3>"Iam Not Intrested In Shooting New Things,
+                Iam Intrested To See Things New"</h3>
+            <div class="inform">
+                <a href="https://whatsapp.com/channel/0029VaM8Jlh6WaKvriosiK1k" class="whatsapp"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#" class="facebook"><i class='bx bxl-facebook' ></i> </a>
+                <a href="#" class="instagram"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" class="twitter"><i class='bx bxl-twitter'></i></a>
+            </div>  
+            <a href="#" class="btn-box">About Us</a>  
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/1.jpg" alt="about-img">
+
+        </div>
+        
+        <div class="about-text">    
+                <h2>About <span>Me</span></h2>
+                <p>Iam  Masireddy Reddeppa Reddy 
+                    From Siddartha Institute Of Science And Technology,
+                    This website crreating for the purpose of incresing
+                    my knowledge in web development.
+                    In This website we can upload nature photos and 
+                    culture we can upload here
+                </p>
+        </div>
+    </section>
+    <section class="download" id="download">
+        <div class="download-img">
+            <img id="myImage" src="images/1.jpg" alt="download-img">
+            <button type="button" class="button" data-download="myImage">Download</button>
+            <script>
+                const downloadLinks=document.querySelectorAll("[data-download]");
+                downloadLinks.forEach(button =>{
+                    const id =button.dataset.download;
+                    const image=document.getElementById(id);
+                    const a=document.createElement("a");
+
+                    a.href=image.src;
+                    a.download="";
+                    a.style.display="none";
+
+                    button.addEventListener("click",() => {
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    });
+                });
+            </script>
+            <img id="myImage" src="images/WhatsApp Image 2024-02-27 at 19.48.55_e72b47dc.jpg" alt="download-img">
+            <button type="button" class="button" data-download="myImage">Download</button>
+            <script>
+                const downloadLinks=document.querySelectorAll("[data-download]");
+                downloadLinks.forEach(button =>{
+                    const id =button.dataset.download;
+                    const image=document.getElementById(id);
+                    const a=document.createElement("a");
+
+                    a.href=image.src;
+                    a.download="";
+                    a.style.display="none";
+
+                    button.addEventListener("click",() => {
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    });
+                });
+            </script>
+            <img id="myImage" src="images/WhatsApp Image 2024-02-27 at 19.48.30_c0b03cf8.jpg" alt="download-img">
+            <button type="button" class="button" data-download="myImage">Download</button>
+            <script>
+                const downloadLinks=document.querySelectorAll("[data-download]");
+                downloadLinks.forEach(button =>{
+                    const id =button.dataset.download;
+                    const image=document.getElementById(id);
+                    const a=document.createElement("a");
+
+                    a.href=image.src;
+                    a.download="";
+                    a.style.display="none";
+
+                    button.addEventListener("click",() => {
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    });
+                });
+            </script>
+            <img id="myImage" src="images/2.jpg" alt="download-img">
+            <button type="button" class="button" data-download="myImage">Download</button>
+            <script>
+                const downloadLinks=document.querySelectorAll("[data-download]");
+                downloadLinks.forEach(button =>{
+                    const id =button.dataset.download;
+                    const image=document.getElementById(id);
+                    const a=document.createElement("a");
+
+                    a.href=image.src;
+                    a.download="";
+                    a.style.display="none";
+
+                    button.addEventListener("click",() => {
+                        document.body.appendChild(a);
+                        a.click();
+                        document.body.removeChild(a);
+                    });
+                });
+            </script>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

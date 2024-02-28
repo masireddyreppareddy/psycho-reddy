@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+body{
+    background-image: url(images/pexels-pixabay-66284.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+ 
+    
+}
+
+.card{
+    width: 350px;
+    height: 430px;
+    perspective: 1500px;
+}
+#chk{
+    display: none;
+}
+#chk:checked ~.content{
+    animation: 2s animate;
+   transform: rotateX(180deg);
+
+}
+@keyframes animate{
+    0%{
+        transform: translateZ(0px);
+    }
+    50%{
+        transform: translateZ(100px);
+    }
+    100%{
+        transform: rotateX(180deg);
+    }
+}
+.content{
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    box-shadow: 0 5px 15px rgb(148, 118, 118);
+    transition: transform 1s cubic-bezier(0.075,0,0.85,1);
+    border-radius: 8px;
+}
+.front,.back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(243, 239, 239, 0.94);
+    background-repeat: #fff;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    perspective: 1500px;
+    border-radius: 8px; 
+}
+.back{
+    transform: rotateX(180deg);
+}
+.inner{
+    height: 100%;
+    padding: 1.5em;
+    transform: translateZ(80px) scale(1);
+
+}
+h2{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: 28px;
+    color: rgb(244, 18, 75);
+    font-weight: bolder;
+}
+p{
+    font-size: 15px;
+    padding: 7px;
+    margin-top: 70px;
+    text-align: justify;
+    line-height: 1.4em;
+}
+input[type=text],
+input[type=possword],
+input[type=email]{
+    width: 95%;
+    height: 40px;
+    padding: 15px;
+    margin: 10px 8px;
+    box-sizing: border-box;
+    color: #000;
+    background: #5bb9be;
+    border: none;
+    outline: black;
+    border-radius: 4px;
+}  
+input[type=text]::placeholder,
+input[type=possword]::placeholder,
+input[type=email]::placeholder{
+    color: rgb(186, 95, 194);
+}  
+.front label{
+    padding: 8px 6px;
+    font-size: 16px;
+    color: red;
+    float: right;
+    cursor: pointer;
+    
+}
+.back label{
+   
+    position: absolute;
+    bottom: 40px;
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+    color: red;
+    cursor: pointer;
+}
+button{
+    position: absolute;
+    right: 30px;
+    width: 82%;
+    padding: 7px;
+    color: white;
+    background: red;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .3s;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+}
+@keyframes glowing {
+    0% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+    }
+    50% {
+      background-color: #49e819;
+      box-shadow: 0 0 20px #49e819;
+    }
+    100% {
+      background-color: #2ba805;
+      box-shadow: 0 0 5px #2ba805;
+   }
+}
+button {
+    animation: glowing 1300ms infinite;
+}
+.front button{
+    bottom: 10%;
+}
+.back button{
+    bottom: 20%;
+}
+button:hover{
+    background-color: rgb(186, 171, 171);
+}
