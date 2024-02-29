@@ -17,22 +17,29 @@ body{
     display: flex;
     height: 90px;
 }
+.check img{
+     size: 10px;
+     height: 100px;
+     width: 50px;
+}
 .nav-bar ul{
     text-decoration: none;
     display: flex;
-    margin: 40px;
+    margin: 50px;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style-type: none;
     text-decoration: rgb(249, 8, 8);
 }
+
+
 .nav-bar a{
     position: relative;
    font-size: 1.1em;
    color: rgb(254, 250, 250);
    text-decoration: none;
    font-weight: 500;
-   margin-left: 140px; 
+   margin-left: 100px; 
    font-weight: bold; 
 }
 .nav-bar a::after{
@@ -72,6 +79,14 @@ body{
 .nav-bar .btnlogin:hover{
     background: rgb(234, 135, 13);
     color: rgb(249, 241, 241);
+}
+.menu-sharp{
+    color: white;
+    height: 50px;
+    width: 50px;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-top: 36px;
 }
 .home{
     position: absolute;
@@ -249,3 +264,16 @@ body{
     outline: none;
     cursor: pointer;
 }
+/*---media queries-*/
+@media screen and (min-width: 600px) {
+
+    .text-box h1{
+        font-size: 50px;
+        line-height: 50px;
+        -webkit-text-stroke: 1px #f3eee8;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: transparent;
+      
+    }
+}
+    
